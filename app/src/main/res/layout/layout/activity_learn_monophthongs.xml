@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background"
+    tools:context=".LearnMonophthongs">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <ScrollView
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/mono_linear_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/monophthong_ic"
+                        android:layout_margin="10dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Monopthongs"
+                        android:textSize="30sp"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/monopthong_expl"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginBottom="20dp">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/mono_top_row"
+                   android:layout_margin="5dp"
+                   android:textSize="20sp"/>
+
+                <GridLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_below="@id/tilte_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:rowCount="1"
+                    android:columnCount="4"
+                    android:layout_centerInParent="true">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/m1"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:text="i:" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sheep"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:orientation="horizontal">
+                            <Button
+                                android:id="@+id/sheep_rec"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/rec_button"
+                                android:layout_margin="5dp"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ply_button"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/m2"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:text="ɪ"/>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ship"
+                                android:textSize="20sp"
+                                android:textAlignment="center"/>
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/rec_button"
+                                android:layout_margin="5dp"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ply_button"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/m3"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:text="ʊ" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Good"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/rec_button"
+                                android:layout_margin="5dp"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ply_button"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/m4"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:text="u:" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Shoot"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/rec_button"
+                                android:layout_margin="5dp"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ply_button"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </GridLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mono_middle_row"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp"/>
+
+                <GridLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_below="@id/tilte_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:rowCount="1"
+                    android:columnCount="4"
+                    android:layout_centerInParent="true">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                       <Button
+                            android:id="@+id/m5"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:text="e" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bed"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/rec_button"
+                                android:layout_margin="5dp"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ply_button"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/m6"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:text="ə" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Teacher"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/rec_button"
+                                android:layout_margin="5dp"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ply_button"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/m7"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:text="ɜː" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bird"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/rec_button"
+                                android:layout_margin="5dp"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ply_button"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/m8"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:text="ɔː" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Door"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/rec_button"
+                                android:layout_margin="5dp"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ply_button"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </GridLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mono_bot_row"
+                    android:layout_margin="5dp"
+                    android:textSize="20sp" />
+
+                <GridLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_below="@id/tilte_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:rowCount="1"
+                    android:columnCount="4"
+                    android:layout_centerInParent="true">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/m9"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:text="æ" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cat"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/rec_button"
+                                android:layout_margin="5dp"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ply_button"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/m10"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:text="ʌ"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="up"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/rec_button"
+                                android:layout_margin="5dp"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ply_button"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                         <Button
+                            android:id="@+id/m11"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:text="ɑː" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Far"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/rec_button"
+                                android:layout_margin="5dp"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ply_button"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/m12"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="5dp"
+                            android:text="ɒ" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="On"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                         <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:orientation="horizontal">
+                            <Button
+
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@drawable/rec_button"
+                                android:layout_margin="5dp"/>
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/ply_button"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </GridLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "391364596627",
+    "firebase_url": "https://innovaphonetics-ab614.firebaseio.com",
+    "project_id": "innovaphonetics-ab614",
+    "storage_bucket": "innovaphonetics-ab614.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391364596627:android:ca3243f5cecccdf2798e66",
+        "android_client_info": {
+          "package_name": "com.innova.phonetics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391364596627-comc3mcje3fp7iaf6c0pvhka61v47474.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.innova.phonetics",
+            "certificate_hash": "7ba624c4fff9a446e34c745a60e78bd2c4ab6b82"
+          }
+        },
+        {
+          "client_id": "391364596627-3vq371bdj12sam5j45d3sm0unrm42jq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxufTIa0EaNbzy8VKY2TdV619aMsaQNyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391364596627-3vq371bdj12sam5j45d3sm0unrm42jq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

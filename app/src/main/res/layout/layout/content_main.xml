@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/header">
+
+        <Button
+            android:id="@+id/hamberger_btn"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_margin="20dp"
+            android:background="@mipmap/humberger"
+            android:padding="5dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:layout_toRightOf="@id/hamberger_btn"
+            android:layout_toEndOf="@+id/hamberger_btn"
+            android:text="@string/app_name"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_text"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/login_logo" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/login_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/cus_button"
+            android:text="Login"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/icon_recylerView"
+            android:layout_below="@id/header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <!--<ScrollView-->
+            <!--android:layout_below="@id/header"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerHorizontal="true">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:id="@+id/card_monophthongs"-->
+                    <!--android:layout_width="200px"-->
+                    <!--android:layout_height="150px"-->
+                    <!--android:layout_margin="10px">-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<Button-->
+                            <!--android:id="@+id/monophthongs_btn"-->
+                            <!--android:layout_width="50dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@mipmap/monophthong_ic" />-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@id/monophthongs_btn"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:text="Monophthongs"/>-->
+                    <!--</RelativeLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:id="@+id/card_diphthongs"-->
+                    <!--android:layout_width="200px"-->
+                    <!--android:layout_height="150px"-->
+                    <!--android:layout_toRightOf="@id/card_monophthongs"-->
+                    <!--android:layout_margin="10px">-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<Button-->
+                            <!--android:id="@+id/diphthongs_btn"-->
+                            <!--android:layout_width="50dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@mipmap/diphthong_ic" />-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@id/diphthongs_btn"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:text="Diphthongs"/>-->
+                    <!--</RelativeLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:id="@+id/card_consonants"-->
+                    <!--android:layout_width="200px"-->
+                    <!--android:layout_height="150px"-->
+                    <!--android:layout_toRightOf="@id/card_diphthongs"-->
+                    <!--android:layout_margin="10px">-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<Button-->
+                            <!--android:id="@+id/consonants_btn"-->
+                            <!--android:layout_width="50dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@mipmap/consonants_ic" />-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@id/consonants_btn"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:text="Consonants"/>-->
+                    <!--</RelativeLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:id="@+id/card_all_charts"-->
+                    <!--android:layout_width="200px"-->
+                    <!--android:layout_height="150px"-->
+                    <!--android:layout_below="@id/card_monophthongs"-->
+                    <!--android:layout_margin="10px">-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<Button-->
+                            <!--android:id="@+id/all_chart_btn"-->
+                            <!--android:layout_width="50dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@mipmap/all_charts_ic" />-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@id/all_chart_btn"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:text="All Charts"/>-->
+                    <!--</RelativeLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:id="@+id/card_learn_btn"-->
+                    <!--android:layout_width="200px"-->
+                    <!--android:layout_height="150px"-->
+                    <!--android:layout_below="@id/card_monophthongs"-->
+                    <!--android:layout_toRightOf="@id/card_all_charts"-->
+                    <!--android:layout_margin="10px">-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<Button-->
+                            <!--android:id="@+id/learn_pho_btn"-->
+                            <!--android:layout_width="50dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@mipmap/learn_pho_ic" />-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@id/learn_pho_btn"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:text="Learn Phonetics"/>-->
+                    <!--</RelativeLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:id="@+id/card_about_btn"-->
+                    <!--android:layout_width="200px"-->
+                    <!--android:layout_height="150px"-->
+                    <!--android:layout_below="@id/card_monophthongs"-->
+                    <!--android:layout_toRightOf="@+id/card_learn_btn"-->
+                    <!--android:layout_margin="10px">-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent">-->
+                        <!--<Button-->
+                            <!--android:id="@+id/about_btn"-->
+                            <!--android:layout_width="50dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:background="@mipmap/about_ic" />-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_below="@id/about_btn"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:text="About"/>-->
+                    <!--</RelativeLayout>-->
+                <!--</android.support.v7.widget.CardView>-->
+            <!--</RelativeLayout>-->
+        <!--</ScrollView>-->
+</RelativeLayout>

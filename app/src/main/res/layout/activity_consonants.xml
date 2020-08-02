@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raydo.dodziraynard.phoneticsmaster.ConsonantsActivity"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/app_background">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tilte_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/consonants_ic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="253dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Consonants"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <GridLayout
+        android:id="@+id/conGridLayout"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/tilte_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="6"
+        android:columnCount="4"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/c1"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="p" />
+
+        <Button
+            android:id="@+id/c2"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="b"/>
+
+        <Button
+            android:id="@+id/c3"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="t" />
+
+        <Button
+            android:id="@+id/c4"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="d" />
+
+        <Button
+            android:id="@+id/c5"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="tʃ" />
+
+
+        <Button
+            android:id="@+id/c6"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="dʒ" />
+
+        <Button
+            android:id="@+id/c7"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="k" />
+
+        <Button
+            android:id="@+id/c8"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="g" />
+
+        <Button
+            android:id="@+id/c9"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="f" />
+
+
+        <Button
+            android:id="@+id/c10"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="v"/>
+
+        <Button
+            android:id="@+id/c11"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="θ" />
+
+        <Button
+            android:id="@+id/c12"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="ð" />
+
+
+        <Button
+            android:id="@+id/c13"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="s"/>
+
+        <Button
+            android:id="@+id/c14"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="z" />
+
+        <Button
+            android:id="@+id/c15"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="ʃ" />
+
+        <Button
+            android:id="@+id/c16"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="ʒ" />
+
+
+        <Button
+            android:id="@+id/c17"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="m" />
+
+        <Button
+            android:id="@+id/c18"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="n" />
+
+        <Button
+            android:id="@+id/c19"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="ŋ" />
+
+        <Button
+            android:id="@+id/c20"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="h" />
+
+
+        <Button
+            android:id="@+id/c21"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="l"/>
+
+        <Button
+            android:id="@+id/c22"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="r" />
+
+        <Button
+            android:id="@+id/c23"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="w" />
+
+        <Button
+            android:id="@+id/c24"
+            android:tag="con_sound"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="j" />
+
+
+    </GridLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

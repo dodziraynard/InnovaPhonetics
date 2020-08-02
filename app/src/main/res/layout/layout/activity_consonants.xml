@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsonantsActivity"
+    android:background="@mipmap/app_background">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/tilte_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/consonants_ic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="253dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Consonants"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/tilte_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="6"
+        android:columnCount="4"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/ii"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="p" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="b"/>
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="t" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="d" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="tʃ" />
+
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="dʒ" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="k" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="g" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="f" />
+
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="v"/>
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="θ" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="ð" />
+
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="s"/>
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="z" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="ʃ" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="ʒ" />
+
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="m" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="n" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="ŋ" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="h" />
+
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="l"/>
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="r" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="w" />
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/con_button"
+            android:text="j" />
+
+
+    </GridLayout>
+
+</RelativeLayout>

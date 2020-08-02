@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Innova Phonetics</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="introductionText">
+        Phonetics\n
+        It is the branch of acoustics concerned with speech processes including its production and perception and acoustic analysis.
+        Basically, it is the study of speech sounds.\n\n
+        The Phonetics Chart\n
+        There are twenty-six (26) alphabets in English Language–five (5) vowels and twenty-one (21) consonants. However, these alphabets are pronounced inconsistently because there are more sounds in the language than the alphabets. There are forty-four (44) sounds in English: twenty (20) vowel sounds–eight pure vowel sounds or monophthong and twelve diphthongs–and twenty-four (24) consonant sounds.
+        At a first glance at the phonetics chart, it looks like a meaningless collection of symbols, however, these symbols represent distinct sounds.
+    </string>
+    <string name="mono_top_row">Front Vowels (tongue towards front)</string>
+    <string name="mono_middle_row">Centre Vowels (tongue relatively flat)</string>
+    <string name="mono_bot_row">Back Vowels (tongue pulled back)</string>
+    <string name="consonant_expl">A consonant sound is made by blocking the air as it leaves the mouth.
+            We use the tongue, lips, teeth, mouth and throat to block air.
+            Some sounds use the voice (voiced), others only air (voiceless).\n\n
+            The second and the last columns are voiceless and the others are voiced.
+    </string>
+    <string name="diphthongs_expl">They are vowel sounds that start near the articulatory position for one vowel and move toward the position for another</string>
+    <string name="monopthong_expl">A vowel sound (diphthong and monophthongs) is made by shaping air as it leaves the mouth.
+            We use the articulators to shape the air - lips, jaw, tongue.</string>
+
+    <!--    Test ID-->
+    <!--  <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <!--  Production ID-->
+    <string name="banner_ad_unit_id">ca-app-pub-9485903417823396/5767798084</string>
+</resources>

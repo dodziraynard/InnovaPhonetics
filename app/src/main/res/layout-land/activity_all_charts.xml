@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raydo.dodziraynard.phoneticsmaster.AllChartsActivity"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/app_background">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_above="@id/adView"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tool_bar">
+        <GridLayout
+            android:id="@+id/allChartsGrid"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="6"
+            android:columnCount="8">
+
+            <Button
+                android:id="@+id/m1"
+                android:tag="mon_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="i:" />
+
+            <Button
+                android:id="@+id/m2"
+                android:tag="mon_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ɪ"/>
+
+            <Button
+                android:id="@+id/m3"
+                android:tag="mon_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ʊ" />
+
+            <Button
+                android:id="@+id/m4"
+                android:tag="mon_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="u:" />
+
+            <Button
+                android:id="@id/d1"
+                android:tag="di_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="ɪə" />
+
+
+            <Button
+                android:id="@id/d2"
+                android:tag="di_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="eɪ" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:visibility="invisible"/>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/m5"
+                android:tag="mon_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="e" />
+
+
+            <Button
+                android:id="@+id/m6"
+                android:tag="mon_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ə"/>
+
+            <Button
+                android:id="@+id/m7"
+                android:tag="mon_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ɜː" />
+
+            <Button
+                android:id="@+id/m8"
+                android:tag="mon_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ɔː" />
+
+
+            <Button
+                android:id="@id/d3"
+                android:tag="di_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="ʊə"/>
+
+            <Button
+                android:id="@id/d4"
+                android:tag="di_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="ɔɪ" />
+
+            <Button
+                android:id="@id/d5"
+                android:tag="di_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="əʊ" />
+
+            <Button
+                android:visibility="invisible"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:text="ʌ" />
+
+
+            <Button
+                android:id="@+id/m9"
+                android:tag="mon_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="æ" />
+
+
+            <Button
+                android:id="@+id/m10"
+                android:tag="mon_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ʌ" />
+
+            <Button
+                android:id="@+id/m11"
+                android:tag="mon_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ɑː" />
+
+            <Button
+                android:id="@+id/m12"
+                android:tag="mon_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ɒ" />
+
+
+            <Button
+                android:id="@id/d6"
+                android:tag="di_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="aʊ"/>
+
+            <Button
+                android:id="@id/d7"
+                android:tag="di_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="aɪ" />
+
+            <Button
+                android:id="@id/d8"
+                android:tag="di_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="aʊ" />
+
+            <Button
+                android:visibility="invisible"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:text="t" />
+
+            <Button
+                android:id="@+id/c1"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="p"/>
+
+            <Button
+                android:id="@+id/c2"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="b" />
+
+            <Button
+                android:id="@+id/c3"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="t" />
+
+            <Button
+                android:id="@+id/c4"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="d" />
+
+            <Button
+                android:id="@+id/c5"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="tʃ"/>
+
+            <Button
+                android:id="@+id/c6"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="dʒ" />
+
+            <Button
+                android:id="@+id/c7"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="k" />
+
+            <Button
+                android:id="@+id/c8"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text=" g" />
+
+            <Button
+                android:id="@+id/c9"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="f"/>
+
+            <Button
+                android:id="@+id/c10"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="v" />
+
+            <Button
+                android:id="@+id/c11"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="θ" />
+
+            <Button
+                android:id="@+id/c12"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="ð" />
+
+
+            <Button
+                android:id="@+id/c13"
+                android:tag="con_sound"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:background="@drawable/con_button"
+            android:text="s"/>
+
+            <Button
+                android:id="@+id/c14"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="z" />
+
+            <Button
+                android:id="@+id/c15"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="ʃ" />
+
+            <Button
+                android:id="@+id/c16"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="ʒ" />
+
+
+            <Button
+                android:id="@+id/c17"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="m"/>
+
+            <Button
+                android:id="@+id/c18"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="n" />
+
+            <Button
+                android:id="@+id/c19"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="ŋ"/>
+
+            <Button
+                android:id="@+id/c20"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="h" />
+
+            <Button
+                android:id="@+id/c21"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="l" />
+
+            <Button
+                android:id="@+id/c22"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="r" />
+
+
+            <Button
+                android:id="@+id/c23"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="w"/>
+
+            <Button
+                android:id="@+id/c24"
+                android:tag="con_sound"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="j" />
+
+        </GridLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_marginTop="15dp"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

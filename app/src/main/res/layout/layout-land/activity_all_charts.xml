@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllChartsActivity"
+    android:background="@mipmap/app_background">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tool_bar">
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="6"
+            android:columnCount="8">
+
+            <Button
+                android:id="@+id/ii"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="i:" />
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ɪ"/>
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ʊ" />
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="u:" />
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="ɪə" />
+
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="eɪ" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:visibility="invisible"/>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:visibility="invisible"/>
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="e" />
+
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ə"/>
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ɜː" />
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ɔː" />
+
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="ʊə"/>
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="ɔɪ" />
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="əʊ" />
+
+            <Button
+                android:visibility="invisible"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ʌ" />
+
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="æ" />
+
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ʌ" />
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ɑː" />
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/mon_button"
+                android:text="ɒ" />
+
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="aʊ"/>
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="aɪ" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/dip_button"
+                android:text="aʊ" />
+
+            <Button
+                android:visibility="invisible"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="t" />
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="p"/>
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="b" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="t" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="d" />
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="tʃ"/>
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="dʒ" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="k" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text=" g" />
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="f"/>
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="v" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="θ" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="ð" />
+
+
+            <Button
+
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:background="@drawable/con_button"
+            android:text="s"/>
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="z" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="ʃ" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="ʒ" />
+
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="m"/>
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="n" />
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="ŋ"/>
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="h" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="l" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="r" />
+
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="w"/>
+
+            <Button
+
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/con_button"
+                android:text="j" />
+
+        </GridLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--ʃ-->
+    <!--ʒ-->
+    <!--m-->
+    <!--n-->
+    <!--ŋ-->
+    <!--h-->
+    <!--l-->
+    <!--r-->
+    <!--w-->
+    <!--j-->
